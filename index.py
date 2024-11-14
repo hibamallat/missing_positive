@@ -13,16 +13,16 @@ def first_missing_positive(numbers):
     return first_positive
 
 #array = [3,4,-1,1]
-#array = [1,2,3]
 #array = [1, 2, 0]
 numbers_list = []
-size = int(input(""))
+list_size = int(input("How many numbers would you like to add to the list? "))
 
-for i in range (size):
+for i in range (list_size):
+
     num = int(input(f"Enter nb{i+1}: "))
     numbers_list.append(num)
 
-print(numbers_list)
-print(first_missing_positive(numbers_list))
+print(f"The List: {numbers_list}")
+print(f"The first missing positive number: {first_missing_positive(numbers_list)}")
             
         
